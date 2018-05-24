@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1487433605 source:d:\kursy\c++\simple calculator\main.cpp
+	<iostream>
+	<cmath>
+	<iomanip>
+
+1490051282 source:c:\users\micma\desktop\calculator\main.cpp
+	<iostream>
+	<cmath>
+	<iomanip>
+
