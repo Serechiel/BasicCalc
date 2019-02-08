@@ -7,10 +7,10 @@ Created mostly for practice.
 #include <cmath>
 #include<iomanip>
 
-using namespace std;
+
 
 void  menu () {
-        cout << "\n"
+         std::cout << "\n"
             "Pick your choice:\n"
             "1 - Sum\n"
             "2 - Substraction \n"
@@ -25,8 +25,8 @@ void  menu () {
 
 double readNumber(){
     double number;
-    cout<<"Enter number"<<endl;
-    cin>>number;
+    std::cout<<"Enter number\n";
+    std::cin>>number;
     return number;
 }
 
@@ -74,45 +74,45 @@ int main()
   int position;
   do {
     menu();
-    cin >> position;
+    std::cin >> position;
 
     switch (position) {
       case 0: {
-        cout << "Thanks for using my basic calc"<< endl;
+        std::cout << "Thanks for using my basic calc\n";
         break;
       }
       case 1: {
-        cout << "\nResult is " << add()<< endl;
+        std::cout << add()<<"\n";
         break;
       }
       case 2: {
-        cout << "\nResult is  " << substract()<< endl;
+        std::cout << substract()<< "\n";
         break;
       }
       case 3: {
-        cout << "\nResult is  " << multiply()<< endl;
+        std::cout << multiply()<< "\n";
         break;
       }
       case 4: {
 
-        cout << "\nResult is " << divide()<< endl;
+        std::cout << divide()<< "\n";
         break;
       }
       case 5: {
-        cout << fixed<<"\nFactorial of given number is  "<<setprecision(0)<<factorial()<< endl;
+       std::cout << std::fixed<<std::setprecision(0)<<factorial()<< "\n";
         break;
       }
       case 6: {
-        cout << "\nResult is " << power() << endl;
+        std::cout << power() << "\n";
         break;
       }
       case 7: {
 
-        cout << "\nSqaure root of given number is " << sqroot() << endl;
+        std::cout << sqroot() << "\n";
         break;
       }
       default:
-        cout << "\nWrong number, try again" << endl;
+        std::cout << "\nWrong number, try again\n";
     }
   } while (position != 0);
   return 0;
